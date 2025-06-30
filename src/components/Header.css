@@ -1,0 +1,153 @@
+/* Layout */
+.header {
+  background-color: white;
+  position: sticky;
+  top: 0;
+  z-index: 40;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.header-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.header-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 64px;
+}
+
+/* Logo */
+.logo {
+  font-size: 1.75rem;
+  font-weight: bold;
+  background: linear-gradient(to right, #2563eb, #7c3aed);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: transform 0.3s;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.logo:hover {
+  transform: scale(1.05);
+}
+
+/* Search */
+.search-bar-desktop {
+  display: none;
+}
+
+.search-bar-mobile {
+  display: block;
+  padding-bottom: 1rem;
+}
+
+.search-wrapper {
+  position: relative;
+}
+
+.search-icon {
+  position: absolute;
+  left: 0.75rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #9ca3af;
+}
+
+.search-input {
+  width: 100%;
+  padding: 0.5rem 1rem 0.5rem 2.5rem;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  outline: none;
+  font-size: 1rem;
+}
+
+.search-input:focus {
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.3);
+}
+
+/* Navigation Icons */
+.nav-icons {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.nav-btn {
+  background: none;
+  border: none;
+  color: #374151;
+  font-weight: 500;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.nav-btn:hover {
+  color: #2563eb;
+}
+
+.icon-btn {
+  position: relative;
+  background: none;
+  border: none;
+  color: #374151;
+  cursor: pointer;
+  padding: 0.5rem;
+  transition: color 0.2s;
+}
+
+.icon-btn:hover {
+  color: #2563eb;
+}
+
+/* Badge */
+.badge {
+  position: absolute;
+  top: -6px;
+  right: -6px;
+  width: 20px;
+  height: 20px;
+  font-size: 0.75rem;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.badge.red {
+  background-color: #ef4444;
+}
+
+.badge.blue {
+  background-color: #2563eb;
+}
+
+/* Responsive */
+@media (min-width: 768px) {
+  .search-bar-desktop {
+    display: flex;
+    flex: 1;
+    max-width: 400px;
+    margin: 0 2rem;
+  }
+
+  .search-bar-mobile {
+    display: none;
+  }
+
+  .hide-mobile {
+    display: inline-block;
+  }
+
+  .show-mobile {
+    display: none;
+  }
+}

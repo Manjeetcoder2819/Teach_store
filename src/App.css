@@ -1,0 +1,13 @@
+/* App.css */
+
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f9fafb; /* Similar to Tailwind's gray-50 */
+}
+
+.app {
+  min-height: 100vh;
+  background-color: #f9fafb;
+}
