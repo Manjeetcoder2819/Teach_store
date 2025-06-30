@@ -39,32 +39,23 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
+TechStore - Modern React.js Ecommerce Website
+A modern, responsive ecommerce website built with React.js, featuring a clean design, shopping cart functionality, and seamless user experience.
+🚀 Features
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Modern UI/UX: Clean, responsive design with smooth animations
+Product Management: Browse products with filtering and search functionality
+Shopping Cart: Add/remove items, update quantities, and manage cart
+Wishlist: Save favorite products for later
+Checkout Process: Complete checkout flow with order summary
+Responsive Design: Optimized for desktop, tablet, and mobile devices
+Real-time Updates: Dynamic cart and wishlist counters
+Search & Filter: Find products by name and category
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+🛠️ Tech Stack
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Frontend: React.js 18.2.0
+Styling: Tailwind CSS & Custom CSS
+Icons: Lucide React
+State Management: React Hooks (useState)
+Build Tool: Create React App
