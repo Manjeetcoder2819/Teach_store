@@ -8,7 +8,7 @@ const Header = ({
   setCurrentView,
   setIsCartOpen,
   getTotalItems,
-  wishlist,
+  wishlist
 }) => {
   return (
     <header className="header">
@@ -19,7 +19,7 @@ const Header = ({
             TechStore
           </button>
 
-          {/* Search Bar (Desktop) */}
+          {/* Desktop Search Bar */}
           <div className="search-bar-desktop">
             <div className="search-wrapper">
               <Search className="search-icon" size={20} />
@@ -43,20 +43,32 @@ const Header = ({
             </button>
 
             {/* Wishlist */}
-            <button className="icon-btn">
+            <button
+              className="icon-btn"
+              onClick={() => setCurrentView('wishlist')}
+              title="Wishlist"
+            >
               <Heart size={24} />
               {wishlist.length > 0 && (
                 <span className="badge red">{wishlist.length}</span>
               )}
             </button>
 
-            {/* User Account */}
-            <button className="icon-btn">
+            {/* User */}
+            <button
+              className="icon-btn"
+              onClick={() => setCurrentView('account')}
+              title="User Account"
+            >
               <User size={24} />
             </button>
 
             {/* Cart */}
-            <button onClick={() => setIsCartOpen(true)} className="icon-btn">
+            <button
+              onClick={() => setIsCartOpen(true)}
+              className="icon-btn"
+              title="Cart"
+            >
               <ShoppingCart size={24} />
               {getTotalItems() > 0 && (
                 <span className="badge blue">{getTotalItems()}</span>
@@ -64,13 +76,13 @@ const Header = ({
             </button>
 
             {/* Mobile Menu */}
-            <button className="icon-btn show-mobile">
+            <button className="icon-btn show-mobile" title="Menu">
               <Menu size={24} />
             </button>
           </div>
         </div>
 
-        {/* Mobile Search */}
+        {/* Mobile Search Bar */}
         <div className="search-bar-mobile">
           <div className="search-wrapper">
             <Search className="search-icon" size={20} />
