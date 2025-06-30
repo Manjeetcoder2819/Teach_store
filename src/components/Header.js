@@ -55,13 +55,13 @@ const Header = ({
             </button>
 
             {/* User */}
-            <button
-              className="icon-btn"
-              onClick={() => setCurrentView('account')}
-              title="User Account"
-            >
-              <User size={24} />
-            </button>
+           <button
+       className="icon-btn"
+       onClick={() => setCurrentView('account')}
+                title="User Account"
+               >
+             <User size={24} />
+               </button>
 
             {/* Cart */}
             <button
